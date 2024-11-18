@@ -1,0 +1,9 @@
+function pipeFix(numbers){
+  const smallest = Math.min(...numbers)
+  const biggest = Math.max(...numbers)
+  let pipeArray = []
+  for(let i=smallest;i<=biggest;i++){
+    pipeArray.push(i)
+  }
+  return pipeArray
+}
