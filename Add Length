@@ -1,0 +1,4 @@
+function addLength(str) {
+  let result = str.split(" ").map(x=>x +" "+ x.length);
+  return result 
+}
