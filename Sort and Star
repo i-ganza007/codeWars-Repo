@@ -1,0 +1,8 @@
+function twoSort(s) {
+  let result = [...s].sort();
+  let answer = "";
+  for(let i=0;i<result[0].length - 1;i++){
+    answer += result[0][i] + "***"
+  }
+  return answer + result[0].slice(result[0].length-1);
+}
