@@ -1,0 +1,6 @@
+function solution(nums) {
+  
+  return Array.isArray(nums) && nums !== null && nums.length > 0 && nums.every(num => !isNaN(num))
+    ? [...nums].sort((a, b) => a - b)  
+    : [];
+}
