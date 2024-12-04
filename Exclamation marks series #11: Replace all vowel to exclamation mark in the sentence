@@ -1,0 +1,10 @@
+function replace(s){
+  let vowels = "aeiouAEIOU";
+  for(let vowel in vowels){
+    if(s.includes(vowels[vowel])){
+      s = s.replaceAll(vowels[vowel],"!")
+    }
+  }
+  return s
+  
+}
