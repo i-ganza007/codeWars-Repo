@@ -1,0 +1,18 @@
+function solution(string) {
+  let arr = [] 
+  if(string.length==0){
+    return string
+  }
+  else{
+    let tracker = 0;
+    for(let i=0;i<string.length;i++){
+      if(string[i] == string[i].toUpperCase()){
+        arr.push(string.slice(tracker,i))
+        tracker = i;
+      }
+    }
+    arr.push(string.slice(tracker)); 
+    return arr.join(" ")
+  }
+  return string
+}
