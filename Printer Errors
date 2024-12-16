@@ -1,0 +1,5 @@
+function printerError(s) {
+  const reg = /[a-m]/;
+  const errors = Array.from(s).filter(x=> reg.test(x))
+  return errors.length > 0 ? `${s.length - errors.length}/${s.length}` : `$0/${s.length}` 
+}
