@@ -1,0 +1,12 @@
+function roundToNext5(n){
+  if(n%5==0){
+    return n
+  }
+  else{
+    let i = n
+    while(i%5!=0){
+      i++
+    }
+    if(i%5==0) return i
+  }
+}
