@@ -1,0 +1,12 @@
+function isValidWalk(walk) {
+  let first_arr = [];
+  let second_arr = [];
+
+  for(let i=0;i<walk.length;i+=2){
+    first_arr.push(walk[i])
+  }
+  for(let x=1;x<walk.length;x+=2){
+    second_arr.push(walk[x])
+  }
+  return walk.length == 10 && Array.from(new Set(first_arr)) == walk[0] && Array.from(new Set(second_arr)) == walk[1]
+}
