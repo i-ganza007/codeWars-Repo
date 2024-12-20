@@ -1,0 +1,11 @@
+class Quark{
+  constructor(color,flavor){
+    this.color = color
+    this.flavor = flavor
+    this.baryon_number = 0.3333333333333333
+  }
+  
+   interact(quark){
+    this.color = quark.color
+  }
+}
