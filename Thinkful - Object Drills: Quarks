@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/5882b052bdeafec15e0000e6/train/javascript
+//Test cases failing
 class Quark{
   constructor(color,flavor){
     this.color = color
