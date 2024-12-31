@@ -1,0 +1,5 @@
+function comp(array1, array2){
+  const squ_arrays = array1.map(x=>x**2).sort((a,b)=>a-b)
+  const new_array2 = array2.sort((x,y)=>x-y)
+  return squ_arrays.every((value,index)=>value===new_array2[index])
+}
