@@ -1,0 +1,11 @@
+function validName(array){
+  const arr_length = array.length;
+  switch(arr_length){
+      case 0:
+          return "You must test at least one name."
+      case 1:
+          return "Congratulations, you can choose any name you like!"
+      default:
+          return array.every((x,index,arr)=>index === arr.length - 1 || x[x.length-1].toLowerCase() === arr[index+1][0].toLowerCase()) ? "Congratulations, your baby names are compatible!" : "Back to the drawing board, your baby names are not compatible."  
+  }
+} 
