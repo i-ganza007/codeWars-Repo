@@ -1,8 +1,4 @@
 function conferencePicker(citiesVisited, citiesOffered) {
-	for(let city of citiesOffered){
-    if (!citiesVisited.includes(city)){
-      return city
-    }
-  }
-  return "No worthwhile conferences this year!"
+	const result = citiesOffered.find(x=>!citiesVisited.includes(x))
+        return result ?? "No worthwhile conferences this year!";
 }
