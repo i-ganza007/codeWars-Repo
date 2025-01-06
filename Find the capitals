@@ -1,0 +1,4 @@
+var capitals = function (word) {
+	const result = word.split('').map((x,index)=>x.toUpperCase() === x ? index : -1).filter(y=>y!==-1)
+  return result
+};
