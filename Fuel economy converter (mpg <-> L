@@ -1,0 +1,9 @@
+function mpg2lp100km(x){
+  const result = (100 * 3.785411784) / (x * 1.609344);
+  return Math.round(result * 100) / 100;
+}
+
+function lp100km2mpg(x){
+  const result = 235.214 / x;
+  return Math.round(result * 100) / 100; 
+}
