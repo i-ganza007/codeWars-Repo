@@ -1,0 +1,7 @@
+function consecutive(array) {
+  let counter = 0;
+    for(let i=Math.min(...array);i<=Math.max(...array);i++){
+    counter++
+  }
+  return counter - array.length
+}
