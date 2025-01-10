@@ -1,0 +1,4 @@
+function getFirstPython(list) {
+  const condition = list.find(x=>x.language=='Python')
+  return condition ? `${condition.firstName}, ${condition.country}` : 'There will be no Python developers'
+}
