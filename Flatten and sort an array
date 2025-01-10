@@ -1,0 +1,7 @@
+"use strict";
+
+function flattenAndSort(array) {
+  // Good luck, brave code warrior!
+  let result = array.flat()
+  return result.sort((a,b)=>a-b)
+}
