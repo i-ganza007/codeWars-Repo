@@ -1,0 +1,9 @@
+function countLanguages(list) {
+  let obj = {};
+  for(let i of list){
+    if(!(i.language in obj)){
+      obj[i.language] = list.filter(x=>x.language==i.language).length
+    }
+  }
+  return obj
+}
