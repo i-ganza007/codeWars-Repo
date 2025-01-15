@@ -1,0 +1,4 @@
+function isRubyComing(list) {
+  let result = list.some(x=>x.language=='Ruby')
+  return result
+}
