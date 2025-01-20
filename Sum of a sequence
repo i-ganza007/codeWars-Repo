@@ -1,0 +1,12 @@
+const sequenceSum = (begin, end, step) => {
+  let counter = 0
+  if(begin > end){
+    return 0
+  }
+  else{
+    for(let i = begin;i<=end;i+=step){
+      counter += i
+    }
+  }
+  return counter;
+};
