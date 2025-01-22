@@ -1,0 +1,4 @@
+function reverseLetter(str) {
+  return str.split('').filter(x=>97 <= x.charCodeAt() && x.charCodeAt() <= 122).reverse().join('');
+
+}
