@@ -1,0 +1,14 @@
+function countPositivesSumNegatives(input) {
+  if(!input || input.length == 0){
+    return []
+  }
+  else{
+    let negs = input.filter(x=>x<0).reduce((acc,curr)=>acc+curr,0)
+    let pos = input.filter(y=>y>0)
+    return [pos.length,negs]
+  }
+}
+
+function countPositivesSumNegatives(input) {
+  return !input || input.length == 0 ? [] : [input.filter(x=>x>0).length,input.filter(y=>y<0).reduce((acc,curr)=>acc+curr,0)]
+}
