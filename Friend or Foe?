@@ -1,0 +1,4 @@
+function friend(friends){
+  let mates = friends.filter(x=>x.length==4)
+  return mates.length >= 1 ? mates : [];
+}
