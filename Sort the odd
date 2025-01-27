@@ -1,0 +1,13 @@
+function sortArray(array) {
+  let obj = {}
+  for (let i in array){
+    if(array[i] % 2 == 0){
+      obj[i] = array[i]
+    }
+  }
+  let filt = array.filter(x=>x%2!=0).sort((a,b)=>a-b)
+  for (let y in obj){
+    filt.splice(Number(y),0,obj[y])
+  }
+  return filt
+}
