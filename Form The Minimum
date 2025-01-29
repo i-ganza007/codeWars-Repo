@@ -1,0 +1,4 @@
+function minValue(values){
+  let result = Array.from(new Set(values));
+  return parseInt(result.sort().join(''));
+}
