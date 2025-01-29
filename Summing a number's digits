@@ -1,0 +1,3 @@
+function sumDigits(number) {
+  return [...Math.abs(number).toString()].reduce((acc,curr)=>acc+parseInt(curr),0)
+}
