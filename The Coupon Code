@@ -1,0 +1,6 @@
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+  let currDate = new Date(currentDate)
+  let expDate = new Date(expirationDate)
+  if(enteredCode !== correctCode) return false
+  return currDate <= expDate
+}
