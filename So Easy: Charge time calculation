@@ -1,0 +1,6 @@
+function calculateTime(battery,charger){
+  let fast = (battery * 0.85) / charger
+  let dec = (battery * 0.1) / (charger * 0.5)
+  let trickle = (battery * 0.05) / (charger * 0.2)
+  return Number((fast + dec+ trickle).toFixed(2))  
+}
