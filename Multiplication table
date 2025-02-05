@@ -1,0 +1,13 @@
+multiplicationTable = function(size) {
+  let arr = []
+  for (let i = 1; i <= size; i++) {
+    let _arr = [];
+    
+    for (let j = 1; j <= size; j++) {
+      _arr.push(i * j);  
+    }
+    
+    arr.push(_arr);
+  }
+  return arr
+}
