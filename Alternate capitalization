@@ -1,0 +1,5 @@
+function capitalize(s){
+  let evens = s.split('').map((x,index)=>{return index%2==0 ? x.toUpperCase():x})
+  let odds = [...s].map((y,idx)=>{return idx%2!=0 ? y.toUpperCase():y})
+  return [evens.join(''),odds.join('')]
+};
