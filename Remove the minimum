@@ -1,0 +1,9 @@
+function removeSmallest(numbers) {
+  let deep = structuredClone(numbers)
+  //console.log(deep)
+  let mini = Math.min(...deep)
+  //console.log(mini)
+  return numbers.length == 0 ? numbers : deep.filter((x,idx,arg)=>idx !== arg.indexOf(mini))
+}
+
+console.log(removeSmallest([1,2,3,4,5]))
