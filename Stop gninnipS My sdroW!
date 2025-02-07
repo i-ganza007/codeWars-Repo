@@ -1,0 +1,5 @@
+function spinWords(string){
+  let result = string.split(' ').map(x=>{return x.length >= 5 ? [...x].reverse().join('') : x})
+  return result.join(' ')
+}
+console.log(spinWords('Hey fellow warriors'))
