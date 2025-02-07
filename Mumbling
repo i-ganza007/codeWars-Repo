@@ -1,0 +1,4 @@
+function accum(s) {
+    let result = [...s].map((x,idx)=>`${x.toUpperCase()}${x.toLowerCase().repeat(idx)}`)
+    return result.join('-')
+}
