@@ -1,0 +1,5 @@
+function solve(s){
+    let upper = [...s].filter(x=>x == x.toUpperCase())
+    let lower = [...s].filter(y=>y== y.toLowerCase())
+    return upper.length > lower.length ? s.toUpperCase() : s.toLowerCase()
+}
