@@ -1,0 +1,4 @@
+function stray(numbers) {
+  let num1 = numbers.filter((x)=>x==numbers[0])
+  return num1.length == 1 ? num1[0] : numbers.find(y=>y!==num1[0])
+}
