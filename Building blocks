@@ -1,0 +1,25 @@
+class Block{
+
+  constructor(arr=[]){
+    // ...
+    this.arr = arr
+    
+  }
+  
+  getWidth(){
+    return this.arr[0]
+  }
+  getLength(){
+    return this.arr[1]
+  }
+  getHeight(){
+    return this.arr[2]
+  }
+  getVolume(){
+    return this.arr.reduce((curr,acc)=>curr*acc,1)
+  }
+  getSurfaceArea(){
+    return this.arr.slice(0,2).reduce((acc,curr)=>acc*curr,1) * 2 + this.arr.slice(1).reduce((acc,curr)=>acc*curr,1) * 2 + (this.arr[0] * this.arr[2] * 2)
+  }
+  
+}
