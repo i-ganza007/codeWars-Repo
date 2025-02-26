@@ -1,0 +1,22 @@
+Array.prototype.even = function(){
+ return this.filter(_=>typeof _ == 'number').filter(z=>Number.isInteger(z)).filter(x=> x%2==0) 
+}
+
+Array.prototype.odd = function(){
+ return this.filter(_=>typeof _ == 'number').filter(z=>Number.isInteger(z)).filter(x=> x%2!=0) 
+}
+
+Array.prototype.under = function(idx){
+ return this.filter(_=>typeof _ == 'number').filter(z=>Number.isInteger(z)).filter(x=> x<idx) 
+}
+
+Array.prototype.over = function(idx){
+ return this.filter(_=>typeof _ == 'number').filter(z=>Number.isInteger(z)).filter(x=> x>idx) 
+}
+
+Array.prototype.inRange = function(a,b){
+ return this.filter(_=>typeof _ == 'number').filter(z=>Number.isInteger(z)).filter(x=> x>=a && x<=b)
+}
+
+
+
