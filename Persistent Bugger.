@@ -1,0 +1,11 @@
+function persistence(num) {
+   let i = 0;
+   let res = num;
+
+   while (res >= 10) {  
+     res = res.toString().split('').map(Number).reduce((acc, curr) => acc * curr, 1);
+     i++;
+   }
+
+   return i;
+}
