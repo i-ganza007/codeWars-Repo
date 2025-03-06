@@ -1,0 +1,4 @@
+function predictAge(...args){
+  let mult = args.map(x=>x**2).reduce((acc,curr)=>acc+curr,0)
+  return Math.floor(Math.sqrt(mult) / 2)
+}
