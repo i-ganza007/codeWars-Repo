@@ -1,0 +1,5 @@
+// Remember you have a CHANGE dictionary to work with ;)
+
+function changeCount( change ){
+  return `$${change.split(' ').map(x=>CHANGE[x]).reduce((acc,curr)=>acc+curr,0).toFixed(2)}`
+}
