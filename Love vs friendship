@@ -1,0 +1,4 @@
+function wordsToMarks(string){
+  let albet = 'abcdefghijklmnopqrstuvwxyz';
+  return string.split('').map(x=>albet.indexOf(x)+1).reduce((acc,curr)=>acc+curr,0)
+}
