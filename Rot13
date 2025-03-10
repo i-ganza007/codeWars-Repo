@@ -1,0 +1,12 @@
+function rot13(message) {
+  let lowerAlbet = 'abcdefghijklmnopqrstuvwxyz';
+  let upperAlbet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let result = '';
+
+  for (let i of message) {
+    result += lowerAlbet.includes(i)
+      ? lowerAlbet[(lowerAlbet.indexOf(i) + 13) % 26] : upperAlbet.includes(i) ? upperAlbet[(upperAlbet.indexOf(i) + 13) % 26]  : i;
+  }
+
+  return result;
+}
