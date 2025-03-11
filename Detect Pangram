@@ -1,0 +1,5 @@
+function isPangram(string){
+  let a = 'abcdefghijklmnopqrstuvwxyz'
+  let result = new Set(string.replace('',' ').toLowerCase().split('').sort().filter(x=> a.includes(x)))
+  return Array.from(result).join('').toString() === a
+}
