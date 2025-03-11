@@ -3,3 +3,8 @@ function isPangram(string){
   let result = new Set(string.replace('',' ').toLowerCase().split('').sort().filter(x=> a.includes(x)))
   return Array.from(result).join('').toString() === a
 }
+
+function isPangram(string){
+  let a = 'abcdefghijklmnopqrstuvwxyz'
+  return [...a].every(x=>string.toLowerCase().includes(x))
+}
