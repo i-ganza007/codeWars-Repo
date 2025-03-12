@@ -1,0 +1,5 @@
+function isSortedAndHow(array) {
+  let asc = [...array].sort((a,b)=>a-b)
+  let desc = [...array].sort((a,b)=>b-a)
+  return array.join('') == asc.join('') ? "yes, ascending" : (array.join('') == desc.join('') ? "yes, descending" : 'no' )
+}
