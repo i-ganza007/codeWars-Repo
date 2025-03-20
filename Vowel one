@@ -1,0 +1,4 @@
+function vowelOne(s){
+  const vowels = ['a','e','i','o','u','A','E','I','O','U']
+  return [...s].map((x)=>vowels.includes(x) ? '1' : '0' ).join('')
+}
