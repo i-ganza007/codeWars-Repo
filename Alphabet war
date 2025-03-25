@@ -1,0 +1,16 @@
+function alphabetWar(fight)
+{
+   const left = ['s','b','p','w']
+   const right = ['z','d','q','m']
+   let right_vars = [...fight]
+        .filter(x => right.includes(x))
+        .reduce((acc, curr) => acc + (right.indexOf(curr) + 1), 0);
+
+   let left_vars = [...fight]
+        .filter(x => left.includes(x))
+        .reduce((acc, curr) => acc + (left.indexOf(curr) + 1), 0);
+
+   return right_vars > left_vars ? 'Right side wins!' :
+          left_vars > right_vars ? 'Left side wins!' :
+          "Let's fight again!"
+}
