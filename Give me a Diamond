@@ -1,0 +1,15 @@
+function diamond(n){
+  if(n<=0 || n%2==0){
+    return null
+  }
+  let res = '';
+  for (let i = 1; i <= n; i += 2) {
+    res += `${' '.repeat((n - i) / 2)}${'*'.repeat(i)}\n`;
+  }
+
+  for (let i = n - 2; i >= 1; i -= 2) {
+    res += `${' '.repeat((n - i) / 2)}${'*'.repeat(i)}\n`;
+  }
+  
+  return res;
+}
