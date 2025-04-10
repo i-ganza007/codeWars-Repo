@@ -1,0 +1,7 @@
+function digPow(n, p){
+  const sum = [...String(n)].reduce((acc, digit, i) => {
+    return acc + Math.pow(Number(digit), p + i);
+  }, 0);
+  
+  return sum % n === 0 ? sum / n : -1;
+}
