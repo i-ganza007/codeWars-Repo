@@ -1,0 +1,5 @@
+function findUniq(arr) {
+  let big =arr.reduce((a,b)=>Math.max(a,b)) , small = arr.reduce((a,b)=>Math.min(a,b)) // We could use the destructuring array but some arrays are huge and can't be destructured
+  let [big_arr,small_arr] = [arr.filter(x=>x==big),arr.filter(y=>y==small)]
+  return big_arr.length == 1 ? big_arr[0] : small_arr[0]
+}
