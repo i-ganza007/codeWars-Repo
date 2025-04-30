@@ -1,4 +1,5 @@
+
 function unusualFive() {
-  let numbers = ["Ian","Ganza","Moses","Divine","Placide"]
+  let people = ["Ian","Ganza","Moses","Divine","Placide"]
   return numbers.length
 }
