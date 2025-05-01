@@ -1,0 +1,3 @@
+function sumCubes(n){
+  return Array.from({length:n},(_,i)=>Math.pow(i+1,3)).reduce((acc,curr)=>acc+curr,0)
+}
