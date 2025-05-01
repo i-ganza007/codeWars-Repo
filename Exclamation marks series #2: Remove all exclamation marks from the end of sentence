@@ -1,0 +1,9 @@
+function remove(string) {  
+  if(!string.includes('!') || !string.endsWith('!')){
+    return string
+  }
+  else{
+    const idx = [...string].reverse().findIndex(y=>y!=='!')
+    return string.slice(0,string.length-idx)
+  }
+}
